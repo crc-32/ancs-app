@@ -6,11 +6,17 @@
 //
 
 import SwiftUI
+import CoreBluetooth
 
 struct ContentView: View {
+    var btDelegate = BTDelegate()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack() {
+            Button("do the thing") {
+                btDelegate.startScan()
+            }
+        }
     }
 }
 

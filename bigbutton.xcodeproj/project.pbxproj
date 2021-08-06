@@ -13,6 +13,7 @@
 		67369AB426BCA78B003E4A28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67369AB326BCA78B003E4A28 /* Preview Assets.xcassets */; };
 		67369ABF26BCA78B003E4A28 /* bigbuttonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369ABE26BCA78B003E4A28 /* bigbuttonTests.swift */; };
 		67369ACA26BCA78B003E4A28 /* bigbuttonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369AC926BCA78B003E4A28 /* bigbuttonUITests.swift */; };
+		67369AD826BCAF1D003E4A28 /* BTDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369AD726BCAF1D003E4A28 /* BTDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		67369AC526BCA78B003E4A28 /* bigbuttonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bigbuttonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67369AC926BCA78B003E4A28 /* bigbuttonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bigbuttonUITests.swift; sourceTree = "<group>"; };
 		67369ACB26BCA78B003E4A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67369AD726BCAF1D003E4A28 /* BTDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				67369AAC26BCA789003E4A28 /* bigbuttonApp.swift */,
 				67369AAE26BCA789003E4A28 /* ContentView.swift */,
+				67369AD726BCAF1D003E4A28 /* BTDelegate.swift */,
 				67369AB026BCA78B003E4A28 /* Assets.xcassets */,
 				67369AB526BCA78B003E4A28 /* Info.plist */,
 				67369AB226BCA78B003E4A28 /* Preview Content */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67369AAF26BCA789003E4A28 /* ContentView.swift in Sources */,
+				67369AD826BCAF1D003E4A28 /* BTDelegate.swift in Sources */,
 				67369AAD26BCA789003E4A28 /* bigbuttonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +423,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"bigbutton/Preview Content\"";
+				DEVELOPMENT_TEAM = 2MFZU35H44;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = bigbutton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -440,6 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"bigbutton/Preview Content\"";
+				DEVELOPMENT_TEAM = 2MFZU35H44;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = bigbutton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
