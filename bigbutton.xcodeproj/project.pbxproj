@@ -14,6 +14,7 @@
 		67369ABF26BCA78B003E4A28 /* bigbuttonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369ABE26BCA78B003E4A28 /* bigbuttonTests.swift */; };
 		67369ACA26BCA78B003E4A28 /* bigbuttonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369AC926BCA78B003E4A28 /* bigbuttonUITests.swift */; };
 		67369AD826BCAF1D003E4A28 /* BTDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369AD726BCAF1D003E4A28 /* BTDelegate.swift */; };
+		6737A3B3270F9EFA001F531B /* ConnectivityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6737A3B2270F9EFA001F531B /* ConnectivityStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		67369AC926BCA78B003E4A28 /* bigbuttonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bigbuttonUITests.swift; sourceTree = "<group>"; };
 		67369ACB26BCA78B003E4A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67369AD726BCAF1D003E4A28 /* BTDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDelegate.swift; sourceTree = "<group>"; };
+		6737A3B2270F9EFA001F531B /* ConnectivityStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				67369AB026BCA78B003E4A28 /* Assets.xcassets */,
 				67369AB526BCA78B003E4A28 /* Info.plist */,
 				67369AB226BCA78B003E4A28 /* Preview Content */,
+				6737A3B2270F9EFA001F531B /* ConnectivityStatus.swift */,
 			);
 			path = bigbutton;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				67369AAF26BCA789003E4A28 /* ContentView.swift in Sources */,
 				67369AD826BCAF1D003E4A28 /* BTDelegate.swift in Sources */,
+				6737A3B3270F9EFA001F531B /* ConnectivityStatus.swift in Sources */,
 				67369AAD26BCA789003E4A28 /* bigbuttonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
