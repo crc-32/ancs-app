@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,8 +13,7 @@
 		67369AB426BCA78B003E4A28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67369AB326BCA78B003E4A28 /* Preview Assets.xcassets */; };
 		67369ABF26BCA78B003E4A28 /* bigbuttonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369ABE26BCA78B003E4A28 /* bigbuttonTests.swift */; };
 		67369ACA26BCA78B003E4A28 /* bigbuttonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369AC926BCA78B003E4A28 /* bigbuttonUITests.swift */; };
-		67369AD826BCAF1D003E4A28 /* BTDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369AD726BCAF1D003E4A28 /* BTDelegate.swift */; };
-		6737A3B3270F9EFA001F531B /* ConnectivityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6737A3B2270F9EFA001F531B /* ConnectivityStatus.swift */; };
+		6793430427127C4F00B1C7D3 /* CobbleLE in Frameworks */ = {isa = PBXBuildFile; productRef = 6793430327127C4F00B1C7D3 /* CobbleLE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +46,6 @@
 		67369AC526BCA78B003E4A28 /* bigbuttonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bigbuttonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67369AC926BCA78B003E4A28 /* bigbuttonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bigbuttonUITests.swift; sourceTree = "<group>"; };
 		67369ACB26BCA78B003E4A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67369AD726BCAF1D003E4A28 /* BTDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDelegate.swift; sourceTree = "<group>"; };
-		6737A3B2270F9EFA001F531B /* ConnectivityStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6793430427127C4F00B1C7D3 /* CobbleLE in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +77,12 @@
 		67369AA026BCA789003E4A28 = {
 			isa = PBXGroup;
 			children = (
+				67E2B57327127A4500A0A1AA /* Packages */,
 				67369AAB26BCA789003E4A28 /* bigbutton */,
 				67369ABD26BCA78B003E4A28 /* bigbuttonTests */,
 				67369AC826BCA78B003E4A28 /* bigbuttonUITests */,
 				67369AAA26BCA789003E4A28 /* Products */,
+				67E2B5672712671300A0A1AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +101,9 @@
 			children = (
 				67369AAC26BCA789003E4A28 /* bigbuttonApp.swift */,
 				67369AAE26BCA789003E4A28 /* ContentView.swift */,
-				67369AD726BCAF1D003E4A28 /* BTDelegate.swift */,
 				67369AB026BCA78B003E4A28 /* Assets.xcassets */,
 				67369AB526BCA78B003E4A28 /* Info.plist */,
 				67369AB226BCA78B003E4A28 /* Preview Content */,
-				6737A3B2270F9EFA001F531B /* ConnectivityStatus.swift */,
 			);
 			path = bigbutton;
 			sourceTree = "<group>";
@@ -136,6 +134,20 @@
 			path = bigbuttonUITests;
 			sourceTree = "<group>";
 		};
+		67E2B5672712671300A0A1AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67E2B57327127A4500A0A1AA /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,8 +162,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				6793430627127E8B00B1C7D3 /* PBXTargetDependency */,
 			);
 			name = bigbutton;
+			packageProductDependencies = (
+				6793430327127C4F00B1C7D3 /* CobbleLE */,
+			);
 			productName = bigbutton;
 			productReference = 67369AA926BCA789003E4A28 /* bigbutton.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +239,9 @@
 				Base,
 			);
 			mainGroup = 67369AA026BCA789003E4A28;
+			packageReferences = (
+				6793430227127C4F00B1C7D3 /* XCRemoteSwiftPackageReference "CobbleLEKit" */,
+			);
 			productRefGroup = 67369AAA26BCA789003E4A28 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,8 +285,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				67369AAF26BCA789003E4A28 /* ContentView.swift in Sources */,
-				67369AD826BCAF1D003E4A28 /* BTDelegate.swift in Sources */,
-				6737A3B3270F9EFA001F531B /* ConnectivityStatus.swift in Sources */,
 				67369AAD26BCA789003E4A28 /* bigbuttonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +317,10 @@
 			isa = PBXTargetDependency;
 			target = 67369AA826BCA789003E4A28 /* bigbutton */;
 			targetProxy = 67369AC626BCA78B003E4A28 /* PBXContainerItemProxy */;
+		};
+		6793430627127E8B00B1C7D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 6793430527127E8B00B1C7D3 /* CobbleLE */;
 		};
 /* End PBXTargetDependency section */
 
@@ -584,6 +605,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6793430227127C4F00B1C7D3 /* XCRemoteSwiftPackageReference "CobbleLEKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/crc-32/CobbleLEKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6793430327127C4F00B1C7D3 /* CobbleLE */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6793430227127C4F00B1C7D3 /* XCRemoteSwiftPackageReference "CobbleLEKit" */;
+			productName = CobbleLE;
+		};
+		6793430527127E8B00B1C7D3 /* CobbleLE */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6793430227127C4F00B1C7D3 /* XCRemoteSwiftPackageReference "CobbleLEKit" */;
+			productName = CobbleLE;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 67369AA126BCA789003E4A28 /* Project object */;
 }
