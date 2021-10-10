@@ -11,37 +11,46 @@ import CobbleLE
 
 struct ContentView: View {
     private var centralController = LECentralController()
-    
+    private var peripheralServerController = LEPeripheralController()
+    private var proximityDiscovery: ProximityDiscovery
     @State private var peripheralClientController: LEClientController?
     @State private var status: ConnectivityStatus? = nil
     @State private var running = false
     
+    @State private var statusText = "Tap below to connect the nearest Pebble"
+    
+    init() {
+        proximityDiscovery = ProximityDiscovery(centralController: centralController)
+    }
+    
     private func connStatusChange(connStatus: ConnectivityStatus) {
         status = connStatus
+        if status?.connected == true && status?.paired == true {
+            statusText = "Connected. You can now forget about this app!"
+        }else if status?.connected == true && status?.paired == false {
+            statusText = "Pairing..."
+        }else {
+            statusText = "Connecting..."
+        }
     }
     
     var body: some View {
         VStack() {
-            if status?.connected == true && status?.paired == true {
-                Text("Connected").multilineTextAlignment(.center)
-            }else if status?.connected == true && status?.paired == false {
-                Text("Pairing...").multilineTextAlignment(.center)
-            }else if status != nil {
-                Text("Connecting...").multilineTextAlignment(.center)
-            }else {
-                Text("Tap below to connect the nearest Pebble").multilineTextAlignment(.center)
-            }
+            Text(statusText).multilineTextAlignment(.center)
             if !running {
                 Button("Connect") {
                     running = true
-                    centralController.startScan() {discoveredDevice in
-                        if peripheralClientController == nil && discoveredDevice.name?.contains("Pebble") == true {
-                            peripheralClientController = LEClientController(peripheral: discoveredDevice,
-                                                                              centralManager: centralController.centralManager,
-                                                                              stateCallback: connStatusChange)
+                    statusText = "Scanning... (Put Pebble on Bluetooth settings page & hold device close)"
+                    proximityDiscovery.onCandidateFound = {peripheral in
+                        if peripheralClientController == nil && peripheral.name?.contains("Pebble") == true {
+                            proximityDiscovery.stopDiscovery()
+                            peripheralClientController = LEClientController(peripheral: peripheral,
+                                                                            centralManager: centralController.centralManager,
+                                                                            stateCallback: connStatusChange)
                             peripheralClientController!.connect()
                         }
                     }
+                    proximityDiscovery.startDiscovery()
                 }
                 .padding()
                 .background(Color.accentColor)
@@ -49,11 +58,12 @@ struct ContentView: View {
                 .clipShape(Capsule())
             }else {
                 Button("Disconnect") {
-                    centralController.stopScan()
+                    proximityDiscovery.stopDiscovery()
                     peripheralClientController?.disconnect()
                     peripheralClientController = nil
                     status = nil
                     running = false
+                    statusText = "Tap below to connect the nearest Pebble"
                 }
                 .padding()
                 .background(Color.accentColor)
