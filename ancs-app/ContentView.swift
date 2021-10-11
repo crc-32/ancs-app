@@ -27,7 +27,7 @@ struct ContentView: View {
     @State private var slide = SubviewSlide.welcome
     @State private var ancsState = false
     
-    @State private var statusText = "\n"
+    @State private var statusText = "  "
     
     var subviews = [
         GraphicView(
@@ -130,7 +130,7 @@ struct ContentView: View {
                             slide = .welcome
                             status = nil
                             running = false
-                            statusText = "\n"
+                            statusText = "  "
                         }
                         .padding()
                         .background(Color.accentColor)
