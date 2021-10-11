@@ -7,46 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		67369AAD26BCA789003E4A28 /* bigbuttonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369AAC26BCA789003E4A28 /* bigbuttonApp.swift */; };
+		672E10F82714DF6C00F439E4 /* GraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E10F72714DF6C00F439E4 /* GraphicView.swift */; };
+		67369AAD26BCA789003E4A28 /* ancsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369AAC26BCA789003E4A28 /* ancsApp.swift */; };
 		67369AAF26BCA789003E4A28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369AAE26BCA789003E4A28 /* ContentView.swift */; };
 		67369AB126BCA78B003E4A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67369AB026BCA78B003E4A28 /* Assets.xcassets */; };
 		67369AB426BCA78B003E4A28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67369AB326BCA78B003E4A28 /* Preview Assets.xcassets */; };
-		67369ABF26BCA78B003E4A28 /* bigbuttonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369ABE26BCA78B003E4A28 /* bigbuttonTests.swift */; };
-		67369ACA26BCA78B003E4A28 /* bigbuttonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369AC926BCA78B003E4A28 /* bigbuttonUITests.swift */; };
 		6793430427127C4F00B1C7D3 /* CobbleLE in Frameworks */ = {isa = PBXBuildFile; productRef = 6793430327127C4F00B1C7D3 /* CobbleLE */; };
 		679343082713789F00B1C7D3 /* ProximityDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679343072713789F00B1C7D3 /* ProximityDiscovery.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		67369ABB26BCA78B003E4A28 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 67369AA126BCA789003E4A28 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 67369AA826BCA789003E4A28;
-			remoteInfo = bigbutton;
-		};
-		67369AC626BCA78B003E4A28 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 67369AA126BCA789003E4A28 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 67369AA826BCA789003E4A28;
-			remoteInfo = bigbutton;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		67369AA926BCA789003E4A28 /* bigbutton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bigbutton.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		67369AAC26BCA789003E4A28 /* bigbuttonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bigbuttonApp.swift; sourceTree = "<group>"; };
+		672E10F52714C59F00F439E4 /* ancs-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "ancs-app.app"; path = "/Users/crc32/Documents/bigbutton/build/Debug-iphoneos/ancs-app.app"; sourceTree = "<absolute>"; };
+		672E10F72714DF6C00F439E4 /* GraphicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicView.swift; sourceTree = "<group>"; };
+		67369AAC26BCA789003E4A28 /* ancsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ancsApp.swift; sourceTree = "<group>"; };
 		67369AAE26BCA789003E4A28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		67369AB026BCA78B003E4A28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67369AB326BCA78B003E4A28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		67369AB526BCA78B003E4A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67369ABA26BCA78B003E4A28 /* bigbuttonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bigbuttonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		67369ABE26BCA78B003E4A28 /* bigbuttonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bigbuttonTests.swift; sourceTree = "<group>"; };
-		67369AC026BCA78B003E4A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67369AC526BCA78B003E4A28 /* bigbuttonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bigbuttonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		67369AC926BCA78B003E4A28 /* bigbuttonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bigbuttonUITests.swift; sourceTree = "<group>"; };
-		67369ACB26BCA78B003E4A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		679343072713789F00B1C7D3 /* ProximityDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityDiscovery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,20 +36,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67369AB726BCA78B003E4A28 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		67369AC226BCA78B003E4A28 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,35 +43,22 @@
 			isa = PBXGroup;
 			children = (
 				67E2B57327127A4500A0A1AA /* Packages */,
-				67369AAB26BCA789003E4A28 /* bigbutton */,
-				67369ABD26BCA78B003E4A28 /* bigbuttonTests */,
-				67369AC826BCA78B003E4A28 /* bigbuttonUITests */,
-				67369AAA26BCA789003E4A28 /* Products */,
-				67E2B5672712671300A0A1AA /* Frameworks */,
+				67369AAB26BCA789003E4A28 /* ancs-app */,
 			);
 			sourceTree = "<group>";
 		};
-		67369AAA26BCA789003E4A28 /* Products */ = {
+		67369AAB26BCA789003E4A28 /* ancs-app */ = {
 			isa = PBXGroup;
 			children = (
-				67369AA926BCA789003E4A28 /* bigbutton.app */,
-				67369ABA26BCA78B003E4A28 /* bigbuttonTests.xctest */,
-				67369AC526BCA78B003E4A28 /* bigbuttonUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		67369AAB26BCA789003E4A28 /* bigbutton */ = {
-			isa = PBXGroup;
-			children = (
-				67369AAC26BCA789003E4A28 /* bigbuttonApp.swift */,
+				67369AAC26BCA789003E4A28 /* ancsApp.swift */,
 				67369AAE26BCA789003E4A28 /* ContentView.swift */,
 				67369AB026BCA78B003E4A28 /* Assets.xcassets */,
 				67369AB526BCA78B003E4A28 /* Info.plist */,
 				67369AB226BCA78B003E4A28 /* Preview Content */,
 				679343072713789F00B1C7D3 /* ProximityDiscovery.swift */,
+				672E10F72714DF6C00F439E4 /* GraphicView.swift */,
 			);
-			path = bigbutton;
+			path = "ancs-app";
 			sourceTree = "<group>";
 		};
 		67369AB226BCA78B003E4A28 /* Preview Content */ = {
@@ -117,31 +67,6 @@
 				67369AB326BCA78B003E4A28 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		67369ABD26BCA78B003E4A28 /* bigbuttonTests */ = {
-			isa = PBXGroup;
-			children = (
-				67369ABE26BCA78B003E4A28 /* bigbuttonTests.swift */,
-				67369AC026BCA78B003E4A28 /* Info.plist */,
-			);
-			path = bigbuttonTests;
-			sourceTree = "<group>";
-		};
-		67369AC826BCA78B003E4A28 /* bigbuttonUITests */ = {
-			isa = PBXGroup;
-			children = (
-				67369AC926BCA78B003E4A28 /* bigbuttonUITests.swift */,
-				67369ACB26BCA78B003E4A28 /* Info.plist */,
-			);
-			path = bigbuttonUITests;
-			sourceTree = "<group>";
-		};
-		67E2B5672712671300A0A1AA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		67E2B57327127A4500A0A1AA /* Packages */ = {
@@ -154,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		67369AA826BCA789003E4A28 /* bigbutton */ = {
+		67369AA826BCA789003E4A28 /* ancs-app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67369ACE26BCA78B003E4A28 /* Build configuration list for PBXNativeTarget "bigbutton" */;
+			buildConfigurationList = 67369ACE26BCA78B003E4A28 /* Build configuration list for PBXNativeTarget "ancs-app" */;
 			buildPhases = (
 				67369AA526BCA789003E4A28 /* Sources */,
 				67369AA626BCA789003E4A28 /* Frameworks */,
@@ -167,49 +92,13 @@
 			dependencies = (
 				6793430627127E8B00B1C7D3 /* PBXTargetDependency */,
 			);
-			name = bigbutton;
+			name = "ancs-app";
 			packageProductDependencies = (
 				6793430327127C4F00B1C7D3 /* CobbleLE */,
 			);
 			productName = bigbutton;
-			productReference = 67369AA926BCA789003E4A28 /* bigbutton.app */;
+			productReference = 672E10F52714C59F00F439E4 /* ancs-app.app */;
 			productType = "com.apple.product-type.application";
-		};
-		67369AB926BCA78B003E4A28 /* bigbuttonTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 67369AD126BCA78B003E4A28 /* Build configuration list for PBXNativeTarget "bigbuttonTests" */;
-			buildPhases = (
-				67369AB626BCA78B003E4A28 /* Sources */,
-				67369AB726BCA78B003E4A28 /* Frameworks */,
-				67369AB826BCA78B003E4A28 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				67369ABC26BCA78B003E4A28 /* PBXTargetDependency */,
-			);
-			name = bigbuttonTests;
-			productName = bigbuttonTests;
-			productReference = 67369ABA26BCA78B003E4A28 /* bigbuttonTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		67369AC426BCA78B003E4A28 /* bigbuttonUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 67369AD426BCA78B003E4A28 /* Build configuration list for PBXNativeTarget "bigbuttonUITests" */;
-			buildPhases = (
-				67369AC126BCA78B003E4A28 /* Sources */,
-				67369AC226BCA78B003E4A28 /* Frameworks */,
-				67369AC326BCA78B003E4A28 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				67369AC726BCA78B003E4A28 /* PBXTargetDependency */,
-			);
-			name = bigbuttonUITests;
-			productName = bigbuttonUITests;
-			productReference = 67369AC526BCA78B003E4A28 /* bigbuttonUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -223,17 +112,9 @@
 					67369AA826BCA789003E4A28 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					67369AB926BCA78B003E4A28 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 67369AA826BCA789003E4A28;
-					};
-					67369AC426BCA78B003E4A28 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 67369AA826BCA789003E4A28;
-					};
 				};
 			};
-			buildConfigurationList = 67369AA426BCA789003E4A28 /* Build configuration list for PBXProject "bigbutton" */;
+			buildConfigurationList = 67369AA426BCA789003E4A28 /* Build configuration list for PBXProject "ancs-app" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -245,13 +126,11 @@
 			packageReferences = (
 				6793430227127C4F00B1C7D3 /* XCRemoteSwiftPackageReference "CobbleLEKit" */,
 			);
-			productRefGroup = 67369AAA26BCA789003E4A28 /* Products */;
+			productRefGroup = 67369AA026BCA789003E4A28;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				67369AA826BCA789003E4A28 /* bigbutton */,
-				67369AB926BCA78B003E4A28 /* bigbuttonTests */,
-				67369AC426BCA78B003E4A28 /* bigbuttonUITests */,
+				67369AA826BCA789003E4A28 /* ancs-app */,
 			);
 		};
 /* End PBXProject section */
@@ -266,20 +145,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67369AB826BCA78B003E4A28 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		67369AC326BCA78B003E4A28 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -288,40 +153,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				679343082713789F00B1C7D3 /* ProximityDiscovery.swift in Sources */,
+				672E10F82714DF6C00F439E4 /* GraphicView.swift in Sources */,
 				67369AAF26BCA789003E4A28 /* ContentView.swift in Sources */,
-				67369AAD26BCA789003E4A28 /* bigbuttonApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		67369AB626BCA78B003E4A28 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				67369ABF26BCA78B003E4A28 /* bigbuttonTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		67369AC126BCA78B003E4A28 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				67369ACA26BCA78B003E4A28 /* bigbuttonUITests.swift in Sources */,
+				67369AAD26BCA789003E4A28 /* ancsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		67369ABC26BCA78B003E4A28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 67369AA826BCA789003E4A28 /* bigbutton */;
-			targetProxy = 67369ABB26BCA78B003E4A28 /* PBXContainerItemProxy */;
-		};
-		67369AC726BCA78B003E4A28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 67369AA826BCA789003E4A28 /* bigbutton */;
-			targetProxy = 67369AC626BCA78B003E4A28 /* PBXContainerItemProxy */;
-		};
 		6793430627127E8B00B1C7D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 6793430527127E8B00B1C7D3 /* CobbleLE */;
@@ -451,16 +291,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"bigbutton/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ancs-app/Preview Content\"";
 				DEVELOPMENT_TEAM = 2MFZU35H44;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = bigbutton/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ancs-app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.rebble.bigbutton;
+				PRODUCT_BUNDLE_IDENTIFIER = io.rebble.ancsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,106 +313,26 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"bigbutton/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ancs-app/Preview Content\"";
 				DEVELOPMENT_TEAM = 2MFZU35H44;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = bigbutton/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ancs-app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.rebble.bigbutton;
+				PRODUCT_BUNDLE_IDENTIFIER = io.rebble.ancsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		67369AD226BCA78B003E4A28 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = bigbuttonTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.rebble.bigbuttonTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bigbutton.app/bigbutton";
-			};
-			name = Debug;
-		};
-		67369AD326BCA78B003E4A28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = bigbuttonTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.rebble.bigbuttonTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bigbutton.app/bigbutton";
-			};
-			name = Release;
-		};
-		67369AD526BCA78B003E4A28 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = bigbuttonUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.rebble.bigbuttonUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = bigbutton;
-			};
-			name = Debug;
-		};
-		67369AD626BCA78B003E4A28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = bigbuttonUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.rebble.bigbuttonUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = bigbutton;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		67369AA426BCA789003E4A28 /* Build configuration list for PBXProject "bigbutton" */ = {
+		67369AA426BCA789003E4A28 /* Build configuration list for PBXProject "ancs-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67369ACC26BCA78B003E4A28 /* Debug */,
@@ -581,29 +341,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67369ACE26BCA78B003E4A28 /* Build configuration list for PBXNativeTarget "bigbutton" */ = {
+		67369ACE26BCA78B003E4A28 /* Build configuration list for PBXNativeTarget "ancs-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67369ACF26BCA78B003E4A28 /* Debug */,
 				67369AD026BCA78B003E4A28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		67369AD126BCA78B003E4A28 /* Build configuration list for PBXNativeTarget "bigbuttonTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				67369AD226BCA78B003E4A28 /* Debug */,
-				67369AD326BCA78B003E4A28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		67369AD426BCA78B003E4A28 /* Build configuration list for PBXNativeTarget "bigbuttonUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				67369AD526BCA78B003E4A28 /* Debug */,
-				67369AD626BCA78B003E4A28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

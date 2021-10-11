@@ -1,6 +1,6 @@
 //
 //  ProximityDiscovery.swift
-//  bigbutton
+//  ancs-app
 //
 //  Created by crc32 on 10/10/2021.
 //
