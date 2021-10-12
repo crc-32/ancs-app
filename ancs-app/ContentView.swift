@@ -17,6 +17,16 @@ enum SubviewSlide: Int {
     case pairError = 4
 }
 
+struct StatusOverlay: View {
+    let statusText: String
+    init(statusText: String) {
+        self.statusText = statusText
+    }
+    var body: some View {
+        Text(statusText).multilineTextAlignment(.center).padding(.bottom, 10).foregroundColor(.gray)
+    }
+}
+
 struct ContentView: View {
     private var centralController = LECentralController()
     private var peripheralServerController = LEPeripheralController()
@@ -27,9 +37,9 @@ struct ContentView: View {
     @State private var slide = SubviewSlide.welcome
     @State private var ancsState = false
     
-    @State private var statusText = "  "
+    @State private var statusText = ""
     
-    var subviews = [
+    let subviews = [
         GraphicView(
             title: "Welcome",
             desc: "This app lets you pair your Pebble for seeing notifications (only!) without access to the official Pebble app!"
@@ -63,7 +73,9 @@ struct ContentView: View {
             running = false
             status = nil
             statusText = "Pairing error"
-            slide = .pairError
+            withAnimation {
+                slide = .pairError
+            }
         } else if status?.connected == true && status?.paired == true {
             if #available(iOS 13.0, *), ancsState {
                 statusText = "Connected. Waiting for notification setup..."
@@ -78,7 +90,9 @@ struct ContentView: View {
     }
     
     private func ancsDone() {
-        slide = .success
+        withAnimation {
+            slide = .success
+        }
         statusText = "Done!"
     }
     
@@ -95,9 +109,13 @@ struct ContentView: View {
                 VStack() {
                     if !running {
                         Button(slide == .pairError ? "Try again" : "Connect to Pebble") {
-                            running = true
+                            withAnimation {
+                                running = true
+                            }
                             statusText = "Scanning..."
-                            slide = .connecting
+                            withAnimation {
+                                slide = .connecting
+                            }
                             
                             proximityDiscovery.onCandidateFound = {peripheral in
                                 if peripheralClientController == nil && peripheral.name?.contains("Pebble") == true {
@@ -127,10 +145,12 @@ struct ContentView: View {
                     }else if (status?.connected != true || status?.paired != true){
                         Button("Cancel") {
                             disconnect()
-                            slide = .welcome
-                            status = nil
-                            running = false
-                            statusText = "  "
+                            withAnimation {
+                                slide = .welcome
+                                status = nil
+                                running = false
+                            }
+                            statusText = ""
                         }
                         .padding()
                         .background(Color.accentColor)
@@ -138,10 +158,10 @@ struct ContentView: View {
                     }
                 }.frame(maxHeight: .infinity)
                 Spacer()
-                Text(statusText).multilineTextAlignment(.center).frame(maxWidth: metrics.size.width * 0.95).padding(.bottom, 5).foregroundColor(.gray)
             }
             .accentColor(Color(red: 0.98, green: 0.64, blue: 0.52))
             .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.2))
+            .overlay(StatusOverlay(statusText: statusText).frame(maxWidth: metrics.size.width * 0.95), alignment: .bottom)
         }
     }
 }
