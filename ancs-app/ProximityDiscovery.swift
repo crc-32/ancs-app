@@ -10,20 +10,21 @@ import CobbleLE
 import CoreBluetooth
 class ProximityDiscovery {
     private let centralController: LECentralController
-    var onCandidateFound: ((CBPeripheral) -> ())?
+    private let onCandidateFound: ((CBPeripheral) -> ())
     
     private var rssiThreshold = -35
     private var rangeTimer: Timer?
     
-    init(centralController: LECentralController) {
+    init(centralController: LECentralController, onCandidateFound: @escaping ((CBPeripheral) -> ())) {
         self.centralController = centralController
+        self.onCandidateFound = onCandidateFound
     }
     
     func startDiscovery() {
         centralController.startScan() {discoveredDevice, rssi in
             //print("RSSI: \(rssi)/\(self.rssiThreshold)")
             if rssi >= self.rssiThreshold {
-                self.onCandidateFound?(discoveredDevice)
+                self.onCandidateFound(discoveredDevice)
             }
         }
         rangeTimer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { timer in

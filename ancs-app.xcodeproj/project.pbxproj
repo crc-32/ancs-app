@@ -14,10 +14,10 @@
 		67369AB426BCA78B003E4A28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67369AB326BCA78B003E4A28 /* Preview Assets.xcassets */; };
 		6793430427127C4F00B1C7D3 /* CobbleLE in Frameworks */ = {isa = PBXBuildFile; productRef = 6793430327127C4F00B1C7D3 /* CobbleLE */; };
 		679343082713789F00B1C7D3 /* ProximityDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679343072713789F00B1C7D3 /* ProximityDiscovery.swift */; };
+		67E5CDBA2717198900926C08 /* BTController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E5CDB92717198900926C08 /* BTController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		672E10F52714C59F00F439E4 /* ancs-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "ancs-app.app"; path = "/Users/crc32/Documents/bigbutton/build/Debug-iphoneos/ancs-app.app"; sourceTree = "<absolute>"; };
 		672E10F72714DF6C00F439E4 /* GraphicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicView.swift; sourceTree = "<group>"; };
 		67369AAC26BCA789003E4A28 /* ancsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ancsApp.swift; sourceTree = "<group>"; };
 		67369AAE26BCA789003E4A28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,6 +25,8 @@
 		67369AB326BCA78B003E4A28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		67369AB526BCA78B003E4A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		679343072713789F00B1C7D3 /* ProximityDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityDiscovery.swift; sourceTree = "<group>"; };
+		67E5CDB82715EBDE00926C08 /* ancs-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ancs-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67E5CDB92717198900926C08 /* BTController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			children = (
 				67E2B57327127A4500A0A1AA /* Packages */,
 				67369AAB26BCA789003E4A28 /* ancs-app */,
+				67E5CDB82715EBDE00926C08 /* ancs-app.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +60,7 @@
 				67369AB226BCA78B003E4A28 /* Preview Content */,
 				679343072713789F00B1C7D3 /* ProximityDiscovery.swift */,
 				672E10F72714DF6C00F439E4 /* GraphicView.swift */,
+				67E5CDB92717198900926C08 /* BTController.swift */,
 			);
 			path = "ancs-app";
 			sourceTree = "<group>";
@@ -97,7 +101,7 @@
 				6793430327127C4F00B1C7D3 /* CobbleLE */,
 			);
 			productName = bigbutton;
-			productReference = 672E10F52714C59F00F439E4 /* ancs-app.app */;
+			productReference = 67E5CDB82715EBDE00926C08 /* ancs-app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -154,6 +158,7 @@
 			files = (
 				679343082713789F00B1C7D3 /* ProximityDiscovery.swift in Sources */,
 				672E10F82714DF6C00F439E4 /* GraphicView.swift in Sources */,
+				67E5CDBA2717198900926C08 /* BTController.swift in Sources */,
 				67369AAF26BCA789003E4A28 /* ContentView.swift in Sources */,
 				67369AAD26BCA789003E4A28 /* ancsApp.swift in Sources */,
 			);

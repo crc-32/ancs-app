@@ -37,6 +37,7 @@ struct GraphicView: View {
             .overlay(ImageOverlay(title: title, desc: desc))
             .frame(maxHeight: 200, alignment: .leading)
             .clipped()
+            .transition(.identity)
     }
 }
 
